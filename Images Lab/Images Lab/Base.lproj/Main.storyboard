@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Comic View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Images_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="comicViewController" customModule="Images_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="110"/>
+            <point key="canvasLocation" x="1777" y="-597"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Cards View Controller-->
         <scene sceneID="CR8-UF-0nD">
             <objects>
-                <viewController id="Bbt-VC-Fce" sceneMemberID="viewController">
+                <viewController id="Bbt-VC-Fce" customClass="PokemonCardsViewController" customModule="Images_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p4b-LW-hhj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hek-8H-YfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="-566"/>
+            <point key="canvasLocation" x="1777" y="110"/>
         </scene>
         <!--Item-->
         <scene sceneID="c2I-Af-rwj">
@@ -56,12 +56,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuf-DY-hi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852.17391304347836" y="109.82142857142857"/>
+            <point key="canvasLocation" x="851" y="-597"/>
         </scene>
-        <!--View Controller-->
+        <!--Random User View Controller-->
         <scene sceneID="KUL-e6-9ia">
             <objects>
-                <viewController id="hPr-t2-lOv" sceneMemberID="viewController">
+                <viewController id="hPr-t2-lOv" customClass="randomUserViewController" customModule="Images_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIW-3m-clv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae9-47-qrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="-566"/>
+            <point key="canvasLocation" x="851" y="110"/>
         </scene>
         <!--Item-->
         <scene sceneID="1Yr-ix-bkn">
