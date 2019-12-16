@@ -14,14 +14,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCx-pp-xQl">
+                                <rect key="frame" x="20" y="108" width="374" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="mym-A8-ylP"/>
+                                </constraints>
+                            </imageView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YlX-op-9mC">
+                                <rect key="frame" x="160" y="536" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vzc-KY-I8z">
+                                <rect key="frame" x="157" y="592" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-aW-8ad">
+                                <rect key="frame" x="53" y="699" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Most recent"/>
+                                <connections>
+                                    <action selector="mostRecentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJb-fM-xBQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1c-PC-Hur">
+                                <rect key="frame" x="268" y="699" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iu9-9G-4cK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bCx-pp-xQl" secondAttribute="trailing" constant="20" id="47F-jf-l1b"/>
+                            <constraint firstItem="bCx-pp-xQl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="95X-qx-K7D"/>
+                            <constraint firstItem="bCx-pp-xQl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mEU-Hn-uv9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="y6P-b7-bVB"/>
+                    <connections>
+                        <outlet property="imageView" destination="bCx-pp-xQl" id="xEC-M7-YYc"/>
+                        <outlet property="stepper" destination="YlX-op-9mC" id="5jP-YJ-1uJ"/>
+                        <outlet property="textField" destination="Vzc-KY-I8z" id="0gs-b5-U28"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="-597"/>
+            <point key="canvasLocation" x="1776.8115942028987" y="-597.32142857142856"/>
         </scene>
         <!--Pokemon Cards View Controller-->
         <scene sceneID="CR8-UF-0nD">
@@ -39,11 +84,11 @@
             </objects>
             <point key="canvasLocation" x="1777" y="110"/>
         </scene>
-        <!--Item-->
+        <!--comic-->
         <scene sceneID="c2I-Af-rwj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6le-NX-dLM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="OHr-ig-4QA"/>
+                    <tabBarItem key="tabBarItem" title="comic" id="OHr-ig-4QA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ogN-nL-MJm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -80,6 +125,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="12Q-cT-2pI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fJM-68-j5L">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
